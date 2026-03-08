@@ -1,0 +1,21 @@
+# Gradle
+.gradle/
+.gradle-home/
+plugin/.gradle/
+plugin/.gradle-home/
+build/
+plugin/build/
+*/build/
+
+# Large reference files
+yungs-dungeons/
+decompiled/
+*.jar
+!plugin/build/libs/*.jar
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
