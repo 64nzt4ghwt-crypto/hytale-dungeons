@@ -1,0 +1,51 @@
+{
+  "id": "spider_nest",
+  "name": "Spider Nest",
+  "description": "A web-choked cavern. The Scarak Broodmother guards her nest fiercely.",
+  "minPlayers": 1,
+  "maxPlayers": 3,
+  "timeLimitSeconds": 480,
+  "rooms": [
+    {
+      "name": "Web Tunnels",
+      "isBoss": false,
+      "mobSpawns": [
+        { "type": "Spider", "count": 5 },
+        { "type": "Spider_Cave", "count": 2 }
+      ],
+      "loot": [
+        { "item": "spider_silk", "minCount": 2, "maxCount": 4, "chance": 0.7 }
+      ]
+    },
+    {
+      "name": "Egg Chamber",
+      "isBoss": false,
+      "mobSpawns": [
+        { "type": "Spider", "count": 6 },
+        { "type": "Spider_Cave", "count": 4 }
+      ],
+      "loot": [
+        { "item": "spider_egg", "minCount": 1, "maxCount": 2, "chance": 0.3 }
+      ]
+    },
+    {
+      "name": "Broodmother's Den",
+      "isBoss": true,
+      "mobSpawns": [
+        { "type": "Scarak_Broodmother", "count": 1 },
+        { "type": "Spider_Cave", "count": 3 }
+      ],
+      "loot": [
+        { "item": "venom_fang", "minCount": 1, "maxCount": 1, "chance": 0.2 },
+        { "item": "spider_silk", "minCount": 5, "maxCount": 10, "chance": 1.0 },
+        { "item": "broodmother_carapace", "minCount": 1, "maxCount": 1, "chance": 0.1 }
+      ]
+    }
+  ],
+  "difficulty": {
+    "baseHealth": 0.9,
+    "baseDamage": 1.3,
+    "perPlayerHealthScale": 0.25,
+    "perPlayerDamageScale": 0.2
+  }
+}

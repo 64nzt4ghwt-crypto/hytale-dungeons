@@ -1,0 +1,94 @@
+{
+  "id": "ice_temple",
+  "displayName": "Temple of Frost",
+  "instanceTemplate": "Dungeon_Ice_Temple",
+  "maxPlayers": 4,
+  "minPlayers": 1,
+  "timeLimit": 2400,
+  "difficulty": "hard",
+  "allowRejoin": true,
+  "rooms": [
+    {
+      "roomIndex": 0,
+      "name": "Frozen Foyer",
+      "type": "combat",
+      "waves": [
+        {
+          "waveIndex": 0,
+          "spawnDelay": 0.0,
+          "mobs": [
+            { "entityType": "Skeleton_Frost", "count": 4, "spawnRadius": 5.0 },
+            { "entityType": "Zombie_Frost", "count": 2, "spawnRadius": 4.0 }
+          ]
+        }
+      ],
+      "lootTable": "ice_temple_common",
+      "timeLimitSeconds": 0
+    },
+    {
+      "roomIndex": 1,
+      "name": "Hall of Mirrors",
+      "type": "timed",
+      "waves": [
+        {
+          "waveIndex": 0,
+          "spawnDelay": 0.0,
+          "mobs": [
+            { "entityType": "Golem_Crystal_Frost", "count": 2, "spawnRadius": 6.0 },
+            { "entityType": "Eye_Void", "count": 3, "spawnRadius": 8.0 }
+          ]
+        },
+        {
+          "waveIndex": 1,
+          "spawnDelay": 5.0,
+          "mobs": [
+            { "entityType": "Skeleton_Frost", "count": 5, "spawnRadius": 5.0 }
+          ]
+        }
+      ],
+      "lootTable": "ice_temple_rare",
+      "timeLimitSeconds": 120
+    },
+    {
+      "roomIndex": 2,
+      "name": "Glacial Depths",
+      "type": "combat",
+      "waves": [
+        {
+          "waveIndex": 0,
+          "spawnDelay": 0.0,
+          "mobs": [
+            { "entityType": "Golem_Crystal_Frost", "count": 1, "spawnRadius": 3.0 },
+            { "entityType": "Necromancer_Void", "count": 1, "spawnRadius": 2.0 },
+            { "entityType": "Skeleton_Frost", "count": 4, "spawnRadius": 6.0 }
+          ]
+        }
+      ],
+      "lootTable": "ice_temple_rare",
+      "timeLimitSeconds": 0
+    },
+    {
+      "roomIndex": 3,
+      "name": "Dragon's Lair",
+      "type": "boss",
+      "waves": [
+        {
+          "waveIndex": 0,
+          "spawnDelay": 0.0,
+          "mobs": [
+            { "entityType": "Dragon_Frost", "count": 1, "spawnRadius": 0.0 }
+          ]
+        },
+        {
+          "waveIndex": 1,
+          "spawnDelay": 15.0,
+          "mobs": [
+            { "entityType": "Skeleton_Frost", "count": 6, "spawnRadius": 10.0 }
+          ]
+        }
+      ],
+      "lootTable": "ice_temple_boss",
+      "timeLimitSeconds": 600
+    }
+  ]
+}

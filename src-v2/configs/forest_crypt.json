@@ -1,0 +1,77 @@
+{
+  "id": "forest_crypt",
+  "displayName": "The Forest Crypt",
+  "instanceTemplate": "Dungeon_Forest_Crypt",
+  "maxPlayers": 4,
+  "minPlayers": 1,
+  "timeLimit": 1800,
+  "difficulty": "normal",
+  "allowRejoin": true,
+  "rooms": [
+    {
+      "roomIndex": 0,
+      "name": "Entrance Hall",
+      "type": "combat",
+      "waves": [
+        {
+          "waveIndex": 0,
+          "spawnDelay": 0.0,
+          "mobs": [
+            { "entityType": "Skeleton", "count": 3, "spawnRadius": 4.0 },
+            { "entityType": "Skeleton_Archer", "count": 2, "spawnRadius": 3.0 }
+          ]
+        }
+      ],
+      "lootTable": "forest_crypt_common",
+      "timeLimitSeconds": 0
+    },
+    {
+      "roomIndex": 1,
+      "name": "The Catacombs",
+      "type": "combat",
+      "waves": [
+        {
+          "waveIndex": 0,
+          "spawnDelay": 0.0,
+          "mobs": [
+            { "entityType": "Skeleton_Knight", "count": 2, "spawnRadius": 3.0 },
+            { "entityType": "Zombie_Aberrant", "count": 2, "spawnRadius": 5.0 }
+          ]
+        },
+        {
+          "waveIndex": 1,
+          "spawnDelay": 3.0,
+          "mobs": [
+            { "entityType": "Skeleton_Mage", "count": 1, "spawnRadius": 2.0 },
+            { "entityType": "Skeleton_Archer", "count": 3, "spawnRadius": 4.0 }
+          ]
+        }
+      ],
+      "lootTable": "forest_crypt_common",
+      "timeLimitSeconds": 0
+    },
+    {
+      "roomIndex": 2,
+      "name": "Throne of Shadows",
+      "type": "boss",
+      "waves": [
+        {
+          "waveIndex": 0,
+          "spawnDelay": 0.0,
+          "mobs": [
+            { "entityType": "Shadow_Knight", "count": 1, "spawnRadius": 0.0 }
+          ]
+        },
+        {
+          "waveIndex": 1,
+          "spawnDelay": 10.0,
+          "mobs": [
+            { "entityType": "Wraith", "count": 2, "spawnRadius": 6.0 }
+          ]
+        }
+      ],
+      "lootTable": "forest_crypt_boss",
+      "timeLimitSeconds": 300
+    }
+  ]
+}

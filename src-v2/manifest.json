@@ -1,0 +1,12 @@
+{
+  "Name": "DungeonPlugin",
+  "Version": "2.0.0",
+  "Main": "com.misa.dungeons.DungeonPlugin",
+  "Description": "Instanced dungeon system with ECS mob spawning, room progression, party support, and loot.",
+  "Authors": ["misa"],
+  "Dependencies": {
+    "Hytale:EntityModule": "*",
+    "Hytale:BlockModule": "*",
+    "Hytale:InstancesPlugin": "*"
+  }
+}

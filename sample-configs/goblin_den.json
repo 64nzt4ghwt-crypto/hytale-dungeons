@@ -1,0 +1,48 @@
+{
+  "id": "goblin_den",
+  "name": "Goblin Den",
+  "description": "A dark cave infested with goblins. Defeat the Ogre boss to claim your reward!",
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "timeLimitSeconds": 600,
+  "rooms": [
+    {
+      "name": "Entrance Cavern",
+      "isBoss": false,
+      "mobSpawns": [
+        { "type": "Goblin_Scavenger", "count": 3 },
+        { "type": "Goblin_Miner", "count": 2 }
+      ],
+      "loot": []
+    },
+    {
+      "name": "Mining Tunnels",
+      "isBoss": false,
+      "mobSpawns": [
+        { "type": "Goblin_Scavenger", "count": 4 },
+        { "type": "Goblin_Miner", "count": 3 }
+      ],
+      "loot": [
+        { "item": "iron_ore", "minCount": 2, "maxCount": 5, "chance": 0.8 }
+      ]
+    },
+    {
+      "name": "Ogre's Lair",
+      "isBoss": true,
+      "mobSpawns": [
+        { "type": "Goblin_Ogre", "count": 1 },
+        { "type": "Goblin_Scavenger", "count": 2 }
+      ],
+      "loot": [
+        { "item": "gold_ingot", "minCount": 3, "maxCount": 8, "chance": 1.0 },
+        { "item": "ogre_club", "minCount": 1, "maxCount": 1, "chance": 0.25 }
+      ]
+    }
+  ],
+  "difficulty": {
+    "baseHealth": 1.0,
+    "baseDamage": 1.0,
+    "perPlayerHealthScale": 0.3,
+    "perPlayerDamageScale": 0.1
+  }
+}

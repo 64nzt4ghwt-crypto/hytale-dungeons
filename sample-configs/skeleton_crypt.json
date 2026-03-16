@@ -1,0 +1,76 @@
+{
+  "id": "skeleton_crypt",
+  "name": "Skeleton Crypt",
+  "description": "Ancient catacombs crawling with undead. The Shadow Knight awaits in the depths.",
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "timeLimitSeconds": 900,
+  "rooms": [
+    {
+      "name": "Burial Chamber",
+      "isBoss": false,
+      "waves": 1,
+      "mobSpawns": [
+        { "type": "Skeleton_Fighter", "count": 4 },
+        { "type": "Skeleton_Archer", "count": 2 }
+      ],
+      "loot": []
+    },
+    {
+      "name": "Hall of Bones",
+      "isBoss": false,
+      "waves": 2,
+      "waveSpawns": [
+        [
+          { "type": "Skeleton_Fighter", "count": 3 },
+          { "type": "Skeleton_Archer", "count": 2 }
+        ],
+        [
+          { "type": "Skeleton_Fighter", "count": 4 },
+          { "type": "Skeleton_Archer", "count": 3 }
+        ]
+      ],
+      "loot": [
+        { "item": "bone_arrow", "minCount": 10, "maxCount": 25, "chance": 0.9 }
+      ]
+    },
+    {
+      "name": "The Ossuary",
+      "isBoss": false,
+      "waves": 2,
+      "waveSpawns": [
+        [
+          { "type": "Skeleton_Fighter", "count": 4 },
+          { "type": "Skeleton_Archer", "count": 2 }
+        ],
+        [
+          { "type": "Skeleton_Fighter", "count": 3 },
+          { "type": "Skeleton_Archer", "count": 4 }
+        ]
+      ],
+      "loot": [
+        { "item": "ancient_coin", "minCount": 1, "maxCount": 3, "chance": 0.5 }
+      ]
+    },
+    {
+      "name": "Shadow Knight's Throne",
+      "isBoss": true,
+      "waves": 1,
+      "mobSpawns": [
+        { "type": "Shadow_Knight", "count": 1 },
+        { "type": "Skeleton_Fighter", "count": 3 }
+      ],
+      "loot": [
+        { "item": "shadow_blade", "minCount": 1, "maxCount": 1, "chance": 0.15 },
+        { "item": "gold_ingot", "minCount": 5, "maxCount": 12, "chance": 1.0 },
+        { "item": "dark_shard", "minCount": 1, "maxCount": 2, "chance": 0.4 }
+      ]
+    }
+  ],
+  "difficulty": {
+    "baseHealth": 1.2,
+    "baseDamage": 1.1,
+    "perPlayerHealthScale": 0.35,
+    "perPlayerDamageScale": 0.15
+  }
+}
